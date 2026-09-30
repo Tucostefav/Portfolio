@@ -1,0 +1,17 @@
+.pie {
+  background-color: var(--texto);
+  color: var(--blanco);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.pie-nombre {
+  margin: 0;
+  font-weight: bold;
+}
+
+.pie-derechos {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #b3c0d8;
+}

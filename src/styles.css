@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos generales de todo el sitio */
+
+:root {
+  --azul: #2b5bff;
+  --azul-oscuro: #1e43cc;
+  --texto: #0d1522;
+  --texto-gris: #4a5675;
+  --fondo: #f5f7fb;
+  --blanco: #ffffff;
+  --borde: #e3e8f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+a {
+  text-decoration: none;
+}

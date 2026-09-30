@@ -1,0 +1,76 @@
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 40px;
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--borde);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-cuadro {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--texto);
+  color: var(--blanco);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-textos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-nombre {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.logo-puesto {
+  font-size: 12px;
+  color: var(--texto-gris);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: var(--texto-gris);
+  font-size: 15px;
+}
+
+.menu a:hover {
+  color: var(--azul);
+}
+
+.boton-cv {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.boton-cv:hover {
+  background-color: var(--azul-oscuro);
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 800px) {
+  .encabezado {
+    flex-direction: column;
+    padding: 16px 20px;
+  }
+}

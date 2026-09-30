@@ -1,0 +1,72 @@
+.portada {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.etiqueta {
+  color: var(--azul);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titulo {
+  font-size: 44px;
+  line-height: 1.2;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.resaltado {
+  color: var(--azul);
+}
+
+.descripcion {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--texto-gris);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.boton-azul {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 14px 24px;
+  border-radius: 10px;
+}
+
+.boton-azul:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.boton-blanco {
+  background-color: var(--blanco);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  padding: 14px 24px;
+  border-radius: 10px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 800px) {
+  .portada {
+    padding: 50px 20px;
+  }
+
+  .titulo {
+    font-size: 32px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+}
