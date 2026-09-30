@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Carlos Mercado | Software Developer",
+    "description": "Software developer focused on business systems, SaaS platforms and process automation."
+  },
+  "common": {
+    "language": "English",
+    "languageShort": "EN",
+    "changeLanguage": "Change language",
+    "loading": "Loading...",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "role": "Software Developer",
+    "name": "Carlos Mercado"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "eyebrow": "Software Developer",
+    "title": "I build software that solves {highlight}",
+    "titleHighlight": "real business problems",
+    "description": "I design and build SaaS platforms, business systems and automations that bring order to operations: less manual work, reliable data and faster decisions.",
+    "ctaProjects": "View projects",
+    "ctaCv": "Download CV",
+    "ctaContact": "Get in touch",
+    "tags": {
+      "saas": "SaaS",
+      "businessSystems": "Business systems",
+      "automation": "Automation",
+      "fullStack": "Full stack development"
+    }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "greeting": "Hi, I'm {name}",
+    "paragraph1": "Software developer focused on business systems, SaaS platforms and automation tools.",
+    "paragraph2": "What sets me apart is that I don't just bring code: I understand operations and accounting, so I can turn a real business process into a system people actually use.",
+    "photoAlt": "Photo of Carlos Mercado",
+    "stats": {
+      "years": "years building software",
+      "systems": "systems in production"
+    },
+    "cards": {
+      "businessFocus": {
+        "title": "Business focus",
+        "text": "I build with a practical, results-driven mindset."
+      },
+      "customSolutions": {
+        "title": "Tailored solutions",
+        "text": "Every project is a chance to make a real impact."
+      },
+      "continuousImprovement": {
+        "title": "Continuous improvement",
+        "text": "Always learning, always building."
+      }
+    },
+    "quote": {
+      "text": "Technology is most valuable when it solves real problems for people and businesses.",
+      "author": "Carlos Mercado"
+    }
+  },
+  "stack": {
+    "eyebrow": "Stack and skills",
+    "levels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "cloudTools": "Cloud and tools"
+    },
+    "skills": {
+      "sqlModeling": "SQL modeling",
+      "hostingDeploy": "Hosting and deployment"
+    }
+  },
+  "projects": {
+    "eyebrow": "Featured projects",
+    "viewAll": "View all projects",
+    "viewCase": "View full case study",
+    "repoAriaLabel": "{project} repository",
+    "demoAriaLabel": "{project} demo",
+    "items": {
+      "encarga": {
+        "name": "ENCARGA",
+        "description": "Business management and work order platform."
+      },
+      "valtix": {
+        "name": "VALTIX",
+        "description": "SaaS platform for accounting management."
+      },
+      "workOrders": {
+        "name": "Work Order System",
+        "description": "Digitized operations tracking."
+      },
+      "vantia": {
+        "name": "VantIA Studio",
+        "description": "Corporate web platform."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Professional experience",
+    "present": "Present",
+    "cvCard": {
+      "title": "Need the full details?",
+      "text": "The PDF resume has the complete track record: responsibilities, tools and results for each stage.",
+      "button": "Download CV as PDF"
+    }
+  },
+  "certifications": {
+    "eyebrow": "Certifications and education",
+    "educationTitle": "Education",
+    "emptySlot": "Room for your next certification",
+    "issuedBy": "Issued by",
+    "year": "Year"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What people say about my work"
+  },
+  "valueBand": {
+    "title": "Technology with a business mindset",
+    "description": "I combine knowledge of operations, administration and software development to build systems that are useful, efficient and aligned with what businesses actually need.",
+    "items": {
+      "efficiency": {
+        "title": "More efficiency",
+        "text": "Simpler, more productive processes."
+      },
+      "decisions": {
+        "title": "Better decisions",
+        "text": "Clear data to drive growth."
+      },
+      "results": {
+        "title": "Real results",
+        "text": "Solutions that create business value."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your next project",
+    "description": "Do you have an idea or a project you want to move forward? I'm open to talking about new opportunities.",
+    "available": "Available for new projects",
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "youremail@example.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project",
+      "privacyNote": "Your message is stored securely and I'll reply by email.",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successMessage": "Thanks! Your message was sent. I'll get back to you soon.",
+      "errorMessage": "The message couldn't be sent. Please try again in a moment.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email address.",
+        "emailInvalid": "That email doesn't look valid.",
+        "messageRequired": "Please enter a message."
+      }
+    },
+    "otherWays": "Other ways to reach me",
+    "channels": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "resume": "Resume",
+      "resumeSubtitle": "Download CV as PDF"
+    }
+  },
+  "footer": {
+    "tagline": "Building solutions for a better tomorrow.",
+    "rights": "© {year} Carlos Mercado. All rights reserved.",
+    "builtWith": "Built with Angular and Firebase"
+  },
+  "projectDetail": {
+    "breadcrumb": "Projects",
+    "backToProjects": "Back to projects",
+    "status": {
+      "inProduction": "In production",
+      "inProgress": "In progress",
+      "archived": "Archived"
+    },
+    "meta": {
+      "role": "Role",
+      "year": "Year",
+      "type": "Type",
+      "client": "Client"
+    },
+    "viewDemo": "View demo",
+    "viewCode": "View code",
+    "challengeLabel": "The challenge",
+    "solutionLabel": "The solution",
+    "resultLabel": "The result",
+    "featuresTitle": "Key features",
+    "impactEyebrow": "Impact",
+    "impactTitle": "What changed in the operation",
+    "nextProject": "Next project",
+    "viewProject": "View project"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Carlos Mercado | Software Developer",
+    "description": "Desarrollador de software enfocado en sistemas empresariales, plataformas SaaS y automatización de procesos de negocio."
+  },
+  "common": {
+    "language": "Español",
+    "languageShort": "ES",
+    "changeLanguage": "Cambiar idioma",
+    "loading": "Cargando...",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "role": "Software Developer",
+    "name": "Carlos Mercado"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "certifications": "Certificaciones",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
+  },
+  "hero": {
+    "eyebrow": "Software Developer",
+    "title": "Construyo software para resolver {highlight} de negocio",
+    "titleHighlight": "problemas reales",
+    "description": "Diseño y desarrollo plataformas SaaS, sistemas empresariales y automatizaciones que ordenan la operación: menos trabajo manual, datos confiables y decisiones más rápidas.",
+    "ctaProjects": "Ver proyectos",
+    "ctaCv": "Descargar CV",
+    "ctaContact": "Contactarme",
+    "tags": {
+      "saas": "SaaS",
+      "businessSystems": "Sistemas empresariales",
+      "automation": "Automatización",
+      "fullStack": "Desarrollo full stack"
+    }
+  },
+  "about": {
+    "eyebrow": "Acerca de mí",
+    "greeting": "Hola, soy {name}",
+    "paragraph1": "Desarrollador de software enfocado en sistemas empresariales, plataformas SaaS y herramientas de automatización.",
+    "paragraph2": "Lo que me diferencia es que no llego solo con código: entiendo operaciones y contabilidad, así que puedo traducir un proceso real de negocio a un sistema que la gente sí usa.",
+    "photoAlt": "Foto de Carlos Mercado",
+    "stats": {
+      "years": "años construyendo software",
+      "systems": "sistemas en producción"
+    },
+    "cards": {
+      "businessFocus": {
+        "title": "Enfoque en negocio",
+        "text": "Desarrollo con una visión práctica y orientada a resultados."
+      },
+      "customSolutions": {
+        "title": "Soluciones a medida",
+        "text": "Cada proyecto es una oportunidad para generar impacto real."
+      },
+      "continuousImprovement": {
+        "title": "Mejora continua",
+        "text": "Siempre aprendiendo, siempre construyendo."
+      }
+    },
+    "quote": {
+      "text": "La tecnología es más valiosa cuando resuelve problemas reales de las personas y las empresas.",
+      "author": "Carlos Mercado"
+    }
+  },
+  "stack": {
+    "eyebrow": "Stack y habilidades",
+    "levels": {
+      "basic": "Básico",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de datos",
+      "cloudTools": "Cloud y herramientas"
+    },
+    "skills": {
+      "sqlModeling": "Modelado SQL",
+      "hostingDeploy": "Hosting y despliegue"
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos destacados",
+    "viewAll": "Ver todos los proyectos",
+    "viewCase": "Ver caso completo",
+    "repoAriaLabel": "Repositorio de {project}",
+    "demoAriaLabel": "Demo de {project}",
+    "items": {
+      "encarga": {
+        "name": "ENCARGA",
+        "description": "Plataforma de gestión empresarial y órdenes de trabajo."
+      },
+      "valtix": {
+        "name": "VALTIX",
+        "description": "Plataforma SaaS de gestión contable."
+      },
+      "workOrders": {
+        "name": "Sistema de Órdenes de Trabajo",
+        "description": "Digitalización y seguimiento operativo."
+      },
+      "vantia": {
+        "name": "VantIA Studio",
+        "description": "Plataforma web corporativa."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experiencia profesional",
+    "present": "Actual",
+    "cvCard": {
+      "title": "¿Necesitas el detalle completo?",
+      "text": "El CV en PDF tiene el recorrido completo: responsabilidades, herramientas y resultados por cada etapa.",
+      "button": "Descargar CV en PDF"
+    }
+  },
+  "certifications": {
+    "eyebrow": "Certificaciones y educación",
+    "educationTitle": "Educación",
+    "emptySlot": "Espacio para tu próxima certificación",
+    "issuedBy": "Emitida por",
+    "year": "Año"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonios",
+    "title": "Lo que dicen de mi trabajo"
+  },
+  "valueBand": {
+    "title": "Tecnología con una visión de negocio",
+    "description": "Combino conocimientos en operaciones, administración y desarrollo de software para crear sistemas útiles, eficientes y alineados con las necesidades reales de las empresas.",
+    "items": {
+      "efficiency": {
+        "title": "Más eficiencia",
+        "text": "Procesos más simples y productivos."
+      },
+      "decisions": {
+        "title": "Mejores decisiones",
+        "text": "Datos claros para impulsar el crecimiento."
+      },
+      "results": {
+        "title": "Resultados reales",
+        "text": "Soluciones que generan valor en el negocio."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos de tu próximo proyecto",
+    "description": "¿Tienes una idea o un proyecto que quieres sacar adelante? Estoy abierto a conversar sobre nuevas oportunidades.",
+    "available": "Disponible para nuevos proyectos",
+    "form": {
+      "nameLabel": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tucorreo@ejemplo.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto",
+      "privacyNote": "Tu mensaje se guarda de forma segura y te respondo por correo.",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successMessage": "¡Gracias! Tu mensaje fue enviado. Te respondo pronto.",
+      "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo en un momento.",
+      "errors": {
+        "nameRequired": "Escribe tu nombre.",
+        "emailRequired": "Escribe tu correo electrónico.",
+        "emailInvalid": "Ese correo no parece válido.",
+        "messageRequired": "Escribe un mensaje."
+      }
+    },
+    "otherWays": "Otras formas de contacto",
+    "channels": {
+      "email": "Correo",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "resume": "Currículum",
+      "resumeSubtitle": "Descargar CV en PDF"
+    }
+  },
+  "footer": {
+    "tagline": "Construyendo soluciones para un mejor mañana.",
+    "rights": "© {year} Carlos Mercado. Todos los derechos reservados.",
+    "builtWith": "Hecho con Angular y Firebase"
+  },
+  "projectDetail": {
+    "breadcrumb": "Proyectos",
+    "backToProjects": "Volver a proyectos",
+    "status": {
+      "inProduction": "En producción",
+      "inProgress": "En desarrollo",
+      "archived": "Archivado"
+    },
+    "meta": {
+      "role": "Rol",
+      "year": "Año",
+      "type": "Tipo",
+      "client": "Cliente"
+    },
+    "viewDemo": "Ver demo",
+    "viewCode": "Ver código",
+    "challengeLabel": "El reto",
+    "solutionLabel": "La solución",
+    "resultLabel": "El resultado",
+    "featuresTitle": "Funcionalidades clave",
+    "impactEyebrow": "Impacto",
+    "impactTitle": "Lo que cambió en la operación",
+    "nextProject": "Siguiente proyecto",
+    "viewProject": "Ver proyecto"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida.",
+    "backHome": "Volver al inicio"
+  }
+}
