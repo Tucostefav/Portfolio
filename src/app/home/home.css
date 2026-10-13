@@ -1,9 +1,9 @@
+/* Mobile first */
+
 .portada {
   background-color: #edf2ff;
   border-bottom: 1px solid #dce4f7;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .etiqueta {
@@ -23,12 +23,13 @@
 .descripcion {
   max-width: 560px;
   margin: 0 auto;
-  font-size: 17px;
+  font-size: 16px;
 }
 
+/* En celular los botones van uno debajo del otro, a todo lo ancho */
 .botones {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 12px;
   margin-top: 28px;
 }
@@ -41,8 +42,19 @@
   margin-top: 32px;
 }
 
-@media (max-width: 800px) {
+/* --- Tableta en adelante: los botones se ponen uno al lado del otro --- */
+@media (min-width: 768px) {
+  .portada {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .descripcion {
+    font-size: 17px;
+  }
+
   .botones {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 }

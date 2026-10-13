@@ -1,7 +1,9 @@
+/* Mobile first */
+
 .columnas {
   display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: start;
 }
 
@@ -63,8 +65,10 @@
   text-align: center;
 }
 
-@media (max-width: 800px) {
+/* --- Escritorio: la tarjeta del CV se pone al lado --- */
+@media (min-width: 1000px) {
   .columnas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 320px;
+    gap: 32px;
   }
 }

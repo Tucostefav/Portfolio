@@ -1,7 +1,14 @@
 /* ============================================================
    ESTILOS GENERALES Y CLASES REUTILIZABLES DE TODO EL SITIO
-   Las clases que se repiten en varias secciones viven aquí,
-   para no copiar y pegar el mismo CSS en cada componente.
+
+   Este archivo esta escrito con el metodo MOBILE FIRST:
+   lo que se ve fuera de los @media son los estilos del celular,
+   y las reglas @media (min-width: ...) van AGREGANDO cambios
+   segun la pantalla se hace mas grande.
+
+   Puntos de quiebre:
+     768px  -> tableta
+     1000px -> escritorio
    ============================================================ */
 
 /* --- 1. Colores y medidas --- */
@@ -37,10 +44,15 @@ a {
   text-decoration: none;
 }
 
-/* --- 2. Secciones: el bloque que envuelve cada parte de la página --- */
+/* Las imagenes nunca se salen de su caja */
+img {
+  max-width: 100%;
+}
+
+/* --- 2. Secciones: el bloque que envuelve cada parte de la pagina --- */
 
 .seccion {
-  padding: 70px 24px;
+  padding: 48px 20px;
 }
 
 .seccion--blanca {
@@ -52,7 +64,7 @@ a {
   color: var(--blanco);
 }
 
-/* Centra el contenido y le pone un ancho máximo */
+/* Centra el contenido y le pone un ancho maximo */
 .contenedor {
   max-width: var(--ancho-maximo);
   margin: 0 auto;
@@ -61,13 +73,13 @@ a {
 /* --- 3. Textos --- */
 
 .titulo-grande {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.2;
   margin: 0 0 16px 0;
 }
 
 .titulo-mediano {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.3;
   margin: 0 0 12px 0;
 }
@@ -95,6 +107,9 @@ a {
   font-size: 15px;
   font-family: inherit;
   cursor: pointer;
+  /* Alto minimo de 48px para que se pueda tocar bien con el dedo */
+  min-height: 48px;
+  text-align: center;
 }
 
 .boton--azul {
@@ -121,26 +136,16 @@ a {
   cursor: default;
 }
 
-/* --- 5. Rejillas de columnas --- */
+/* --- 5. Rejillas de columnas ---
+   En celular todo va en UNA columna, que es lo que hace el grid
+   por defecto. Las columnas se agregan mas abajo, en los @media. */
 
 .grid {
   display: grid;
   gap: 20px;
 }
 
-.grid--2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-/* --- 6. Etiquetas pequeñas (chips) --- */
+/* --- 6. Etiquetas pequenas (chips) --- */
 
 .chip {
   display: inline-block;
@@ -180,7 +185,8 @@ a {
   border-radius: 10px;
   background-color: var(--blanco);
   font-family: inherit;
-  font-size: 15px;
+  /* 16px evita que el iPhone haga zoom al tocar el campo */
+  font-size: 16px;
   color: var(--texto);
 }
 
@@ -189,20 +195,41 @@ a {
   border-color: var(--azul);
 }
 
-/* --- 8. Pantallas pequeñas: todo pasa a una sola columna --- */
+/* ============================================================
+   DE AQUI EN ADELANTE: lo que se AGREGA en pantallas grandes
+   ============================================================ */
 
-@media (max-width: 800px) {
+/* --- Tableta --- */
+@media (min-width: 768px) {
   .seccion {
-    padding: 48px 20px;
+    padding: 70px 24px;
   }
 
   .titulo-grande {
-    font-size: 30px;
+    font-size: 40px;
   }
 
-  .grid--2,
-  .grid--3,
+  .titulo-mediano {
+    font-size: 26px;
+  }
+
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* En tableta cuatro columnas quedan muy estrechas, van de dos en dos */
   .grid--4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Escritorio --- */
+@media (min-width: 1000px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

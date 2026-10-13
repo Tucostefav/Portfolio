@@ -1,14 +1,13 @@
+/* Mobile first: primero el celular, abajo lo que cambia en pantallas grandes */
+
 .encabezado {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 14px 24px;
+  gap: 14px;
+  padding: 14px 20px;
   background-color: var(--blanco);
   border-bottom: 1px solid var(--borde);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .logo {
@@ -27,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .logo-textos {
@@ -46,12 +46,16 @@
 
 .menu {
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 22px;
 }
 
 .menu a {
   color: var(--texto-gris);
   font-size: 15px;
+  /* Espacio para el dedo sin agrandar la letra */
+  padding: 6px 2px;
 }
 
 .menu a:hover {
@@ -65,8 +69,8 @@
 }
 
 .boton-idioma {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border: 1px solid var(--borde);
   border-radius: 10px;
   background-color: var(--blanco);
@@ -74,6 +78,7 @@
   font-family: inherit;
   font-size: 14px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .boton-idioma:hover {
@@ -81,14 +86,19 @@
   color: var(--azul);
 }
 
-@media (max-width: 900px) {
+/* --- Escritorio: todo en una fila y el encabezado se queda arriba al bajar --- */
+@media (min-width: 1000px) {
   .encabezado {
-    flex-direction: column;
-    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 
   .menu {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
