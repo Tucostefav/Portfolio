@@ -21,11 +21,12 @@ export class Contacto {
   // Es una señal para que la pantalla se actualice sola al cambiar.
   estado = signal('');
 
-  // TODO: reemplazar por tus datos reales
-  datosContacto = {
-    correo: '[tu-correo@dominio.com]',
-    github: '[github.com/tu-usuario]',
-    linkedin: '[linkedin.com/in/tu-perfil]',
+  // El correo no se pone aqui a proposito: si se escribe en la pagina,
+  // los robots que rastrean la web lo recogen y llega spam.
+  // Para escribirme esta el formulario, que guarda el mensaje en Firestore.
+  redes = {
+    github: 'https://github.com/Tucostefav',
+    linkedin: 'https://www.linkedin.com/in/carlos-mercado-b3b09b1b0',
   };
 
   constructor(public textos: Textos) {}

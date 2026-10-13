@@ -10,25 +10,12 @@ import { Tarjeta } from '../tarjeta/tarjeta';
   styleUrl: './experiencia.css',
 })
 export class Experiencia {
-  // TODO: reemplazar con la experiencia laboral real
   trabajos = [
     {
-      puesto: '[Puesto]',
-      empresa: '[Empresa]',
-      periodo: '[2023 - Actual]',
-      logro: '[Logro medible: qué construiste y qué mejoró]',
-    },
-    {
-      puesto: '[Puesto]',
-      empresa: '[Empresa]',
-      periodo: '[2021 - 2023]',
-      logro: '[Logro medible]',
-    },
-    {
-      puesto: '[Puesto]',
-      empresa: '[Empresa]',
-      periodo: '[2019 - 2021]',
-      logro: '[Logro medible]',
+      puesto: 'Operaciones y logística en soporte técnico',
+      empresa: 'RM Consultores',
+      actual: true,
+      logro: '',
     },
   ];
 

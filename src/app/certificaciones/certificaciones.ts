@@ -10,16 +10,12 @@ import { Tarjeta } from '../tarjeta/tarjeta';
   styleUrl: './certificaciones.css',
 })
 export class Certificaciones {
-  // TODO: reemplazar con las certificaciones reales
-  certificados = [
-    { nombre: '[Nombre de la certificación]', emisor: '[Emisor]', anio: '[Año]' },
-    { nombre: '[Nombre de la certificación]', emisor: '[Emisor]', anio: '[Año]' },
-  ];
-
-  // TODO: reemplazar con los estudios reales
   estudios = [
-    { titulo: '[Título universitario]', lugar: '[Universidad]', anio: '[Año - Año]' },
-    { titulo: '[Curso o especialización]', lugar: '[Institución]', anio: '[Año]' },
+    {
+      titulo: 'Desarrollo de Software',
+      lugar: 'ITSE',
+      enCurso: true,
+    },
   ];
 
   constructor(public textos: Textos) {}

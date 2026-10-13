@@ -10,10 +10,47 @@
       <div class="intro">
         <h2 class="titulo-mediano">{{ t.contact.title }}</h2>
         <p class="texto-apoyo">{{ t.contact.description }}</p>
+
         <p class="disponible">
           <span class="punto-verde"></span>
           {{ t.contact.available }}
         </p>
+
+        <h3 class="redes-titulo">{{ t.contact.otherWays }}</h3>
+        <div class="redes">
+          <a
+            class="red"
+            [href]="redes.github"
+            target="_blank"
+            rel="noopener"
+            [attr.aria-label]="t.contact.channels.github"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="7" cy="6.5" r="2.5" />
+              <circle cx="7" cy="17.5" r="2.5" />
+              <circle cx="17" cy="9" r="2.5" />
+              <path d="M7 9v6" />
+              <path d="M17 11.5c0 2.8-3.6 2.6-6.4 3.8" />
+            </svg>
+          </a>
+
+          <a
+            class="red"
+            [href]="redes.linkedin"
+            target="_blank"
+            rel="noopener"
+            [attr.aria-label]="t.contact.channels.linkedin"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />
+              <path d="M8 10.5V16" />
+              <path d="M8 7.7v.2" />
+              <path d="M12 16v-3a2 2 0 0 1 4 0v3" />
+            </svg>
+          </a>
+        </div>
       </div>
 
       <div class="formulario-caja">
@@ -83,25 +120,6 @@
           </form>
 
         }
-      </div>
-
-      <div class="canales">
-        <h3 class="canales-titulo">{{ t.contact.otherWays }}</h3>
-
-        <div class="canal">
-          <span class="canal-nombre">{{ t.contact.channels.email }}</span>
-          <span class="canal-dato">{{ datosContacto.correo }}</span>
-        </div>
-
-        <div class="canal">
-          <span class="canal-nombre">{{ t.contact.channels.github }}</span>
-          <span class="canal-dato">{{ datosContacto.github }}</span>
-        </div>
-
-        <div class="canal">
-          <span class="canal-nombre">{{ t.contact.channels.linkedin }}</span>
-          <span class="canal-dato">{{ datosContacto.linkedin }}</span>
-        </div>
       </div>
 
     </div>

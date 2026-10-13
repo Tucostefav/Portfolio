@@ -1,7 +1,7 @@
 .columnas {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  gap: 28px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: start;
 }
 
@@ -19,6 +19,36 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--verde);
+}
+
+.redes-titulo {
+  margin: 32px 0 12px 0;
+  font-size: 14px;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+}
+
+/* Los iconos son cuadrados de 48px para que se puedan tocar bien en el celular */
+.red {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  color: var(--texto-gris);
+}
+
+.red:hover {
+  border-color: var(--azul);
+  color: var(--azul);
 }
 
 .formulario-caja {
@@ -52,34 +82,9 @@
   color: #8a4b08;
 }
 
-.canales-titulo {
-  margin: 0 0 14px 0;
-  font-size: 16px;
-}
-
-.canal {
-  padding: 14px 16px;
-  margin-bottom: 10px;
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-}
-
-.canal-nombre {
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.canal-dato {
-  display: block;
-  margin-top: 4px;
-  font-size: 13px;
-  color: var(--texto-suave);
-  word-break: break-all;
-}
-
 @media (max-width: 900px) {
   .columnas {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 }

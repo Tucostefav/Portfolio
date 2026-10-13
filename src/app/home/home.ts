@@ -5,7 +5,6 @@ import { Stack } from '../stack/stack';
 import { Proyectos } from '../proyectos/proyectos';
 import { Experiencia } from '../experiencia/experiencia';
 import { Certificaciones } from '../certificaciones/certificaciones';
-import { Testimonios } from '../testimonios/testimonios';
 import { Enfoque } from '../enfoque/enfoque';
 import { Contacto } from '../contacto/contacto';
 
@@ -17,7 +16,6 @@ import { Contacto } from '../contacto/contacto';
     Proyectos,
     Experiencia,
     Certificaciones,
-    Testimonios,
     Enfoque,
     Contacto,
   ],

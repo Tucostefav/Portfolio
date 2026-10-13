@@ -12,10 +12,14 @@
           <div class="trabajo">
             <div class="encabezado-trabajo">
               <h3 class="puesto">{{ trabajo.puesto }}</h3>
-              <span class="periodo">{{ trabajo.periodo }}</span>
+              @if (trabajo.actual) {
+                <span class="insignia">{{ t.experience.present }}</span>
+              }
             </div>
             <p class="empresa">{{ trabajo.empresa }}</p>
-            <p class="texto-apoyo">{{ trabajo.logro }}</p>
+            @if (trabajo.logro) {
+              <p class="texto-apoyo">{{ trabajo.logro }}</p>
+            }
           </div>
         }
       </div>

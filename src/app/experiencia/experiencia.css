@@ -31,10 +31,11 @@
   background-color: var(--azul);
 }
 
+/* La insignia va pegada al puesto, no al borde de la columna */
 .encabezado-trabajo {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -43,13 +44,16 @@
   font-size: 17px;
 }
 
-.periodo {
-  font-size: 13px;
-  color: var(--texto-suave);
+.insignia {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #e3f5ef;
+  color: #0b6b57;
+  font-size: 12px;
 }
 
 .empresa {
-  margin: 4px 0 8px 0;
+  margin: 6px 0 0 0;
   color: var(--texto-gris);
 }
 

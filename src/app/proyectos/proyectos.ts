@@ -10,13 +10,30 @@ import { Tarjeta } from '../tarjeta/tarjeta';
   styleUrl: './proyectos.css',
 })
 export class Proyectos {
-  // Los nombres de las tecnologias no se traducen,
-  // asi que viven aqui y no en el diccionario
-  tecnologias = {
-    encarga: ['PHP', 'JavaScript', 'MariaDB', 'Bootstrap'],
-    valtix: ['Node.js', 'Angular', 'Firebase', 'MySQL'],
-    workOrders: ['PHP', 'JavaScript', 'MariaDB', 'Bootstrap'],
-    vantia: ['Angular', 'Firebase', 'JavaScript', 'Bootstrap'],
+  // Los nombres de las tecnologias y las direcciones web no se traducen,
+  // asi que viven aqui y no en el diccionario.
+  // Cuando "sitio" esta vacio, la tarjeta no muestra enlace.
+  proyectos = {
+    encarga: {
+      tecnologias: ['PHP', 'JavaScript', 'MariaDB', 'Bootstrap'],
+      sitio: 'https://myencarga.com',
+      enDesarrollo: false,
+    },
+    valtix: {
+      tecnologias: ['Node.js', 'Angular', 'Firebase', 'MySQL'],
+      sitio: '',
+      enDesarrollo: true,
+    },
+    workOrders: {
+      tecnologias: ['PHP', 'JavaScript', 'MariaDB', 'Bootstrap'],
+      sitio: '',
+      enDesarrollo: false,
+    },
+    vantia: {
+      tecnologias: ['Angular', 'Firebase', 'JavaScript', 'Bootstrap'],
+      sitio: 'https://vantiastudiopa.com',
+      enDesarrollo: false,
+    },
   };
 
   constructor(public textos: Textos) {}

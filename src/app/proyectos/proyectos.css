@@ -1,3 +1,11 @@
+/* El contenido ocupa toda la tarjeta para que el enlace
+   quede siempre abajo, aunque las descripciones midan distinto */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .proyecto-nombre {
   margin: 0 0 10px 0;
   font-size: 17px;
@@ -8,4 +16,23 @@
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 14px;
+}
+
+.enlace {
+  margin-top: auto;
+  padding-top: 16px;
+  color: var(--azul);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.enlace:hover {
+  color: var(--azul-oscuro);
+}
+
+.estado {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 13px;
+  color: var(--texto-suave);
 }

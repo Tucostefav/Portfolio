@@ -8,42 +8,57 @@
     <div class="grid grid--4">
 
       <app-tarjeta>
-        <h3 class="proyecto-nombre">{{ t.projects.items.encarga.name }}</h3>
-        <p class="texto-apoyo">{{ t.projects.items.encarga.description }}</p>
-        <div class="chips">
-          @for (tecnologia of tecnologias.encarga; track tecnologia) {
-            <span class="chip">{{ tecnologia }}</span>
-          }
+        <div class="contenido">
+          <h3 class="proyecto-nombre">{{ t.projects.items.encarga.name }}</h3>
+          <p class="texto-apoyo">{{ t.projects.items.encarga.description }}</p>
+          <div class="chips">
+            @for (tecnologia of proyectos.encarga.tecnologias; track tecnologia) {
+              <span class="chip">{{ tecnologia }}</span>
+            }
+          </div>
+          <a class="enlace" [href]="proyectos.encarga.sitio" target="_blank" rel="noopener">
+            {{ t.projects.visitSite }} &rarr;
+          </a>
         </div>
       </app-tarjeta>
 
       <app-tarjeta>
-        <h3 class="proyecto-nombre">{{ t.projects.items.valtix.name }}</h3>
-        <p class="texto-apoyo">{{ t.projects.items.valtix.description }}</p>
-        <div class="chips">
-          @for (tecnologia of tecnologias.valtix; track tecnologia) {
-            <span class="chip">{{ tecnologia }}</span>
-          }
+        <div class="contenido">
+          <h3 class="proyecto-nombre">{{ t.projects.items.valtix.name }}</h3>
+          <p class="texto-apoyo">{{ t.projects.items.valtix.description }}</p>
+          <div class="chips">
+            @for (tecnologia of proyectos.valtix.tecnologias; track tecnologia) {
+              <span class="chip">{{ tecnologia }}</span>
+            }
+          </div>
+          <span class="estado">{{ t.projects.inDevelopment }}</span>
         </div>
       </app-tarjeta>
 
       <app-tarjeta>
-        <h3 class="proyecto-nombre">{{ t.projects.items.workOrders.name }}</h3>
-        <p class="texto-apoyo">{{ t.projects.items.workOrders.description }}</p>
-        <div class="chips">
-          @for (tecnologia of tecnologias.workOrders; track tecnologia) {
-            <span class="chip">{{ tecnologia }}</span>
-          }
+        <div class="contenido">
+          <h3 class="proyecto-nombre">{{ t.projects.items.workOrders.name }}</h3>
+          <p class="texto-apoyo">{{ t.projects.items.workOrders.description }}</p>
+          <div class="chips">
+            @for (tecnologia of proyectos.workOrders.tecnologias; track tecnologia) {
+              <span class="chip">{{ tecnologia }}</span>
+            }
+          </div>
         </div>
       </app-tarjeta>
 
       <app-tarjeta>
-        <h3 class="proyecto-nombre">{{ t.projects.items.vantia.name }}</h3>
-        <p class="texto-apoyo">{{ t.projects.items.vantia.description }}</p>
-        <div class="chips">
-          @for (tecnologia of tecnologias.vantia; track tecnologia) {
-            <span class="chip">{{ tecnologia }}</span>
-          }
+        <div class="contenido">
+          <h3 class="proyecto-nombre">{{ t.projects.items.vantia.name }}</h3>
+          <p class="texto-apoyo">{{ t.projects.items.vantia.description }}</p>
+          <div class="chips">
+            @for (tecnologia of proyectos.vantia.tecnologias; track tecnologia) {
+              <span class="chip">{{ tecnologia }}</span>
+            }
+          </div>
+          <a class="enlace" [href]="proyectos.vantia.sitio" target="_blank" rel="noopener">
+            {{ t.projects.visitSite }} &rarr;
+          </a>
         </div>
       </app-tarjeta>
 

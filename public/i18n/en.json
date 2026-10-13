@@ -20,7 +20,6 @@
     "projects": "Projects",
     "experience": "Experience",
     "certifications": "Certifications",
-    "testimonials": "Testimonials",
     "contact": "Contact",
     "downloadCv": "Download CV"
   },
@@ -89,9 +88,6 @@
   "projects": {
     "eyebrow": "Featured projects",
     "viewAll": "View all projects",
-    "viewCase": "View full case study",
-    "repoAriaLabel": "{project} repository",
-    "demoAriaLabel": "{project} demo",
     "items": {
       "encarga": {
         "name": "ENCARGA",
@@ -109,7 +105,9 @@
         "name": "VantIA Studio",
         "description": "Corporate web platform."
       }
-    }
+    },
+    "inDevelopment": "In development",
+    "visitSite": "Visit site"
   },
   "experience": {
     "eyebrow": "Professional experience",
@@ -121,15 +119,8 @@
     }
   },
   "certifications": {
-    "eyebrow": "Certifications and education",
-    "educationTitle": "Education",
-    "emptySlot": "Room for your next certification",
-    "issuedBy": "Issued by",
-    "year": "Year"
-  },
-  "testimonials": {
-    "eyebrow": "Testimonials",
-    "title": "What people say about my work"
+    "eyebrow": "Education",
+    "studying": "Currently studying"
   },
   "valueBand": {
     "title": "Technology with a business mindset",
@@ -173,13 +164,10 @@
         "messageRequired": "Please enter a message."
       }
     },
-    "otherWays": "Other ways to reach me",
+    "otherWays": "Find me on",
     "channels": {
-      "email": "Email",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "resume": "Resume",
-      "resumeSubtitle": "Download CV as PDF"
+      "linkedin": "LinkedIn"
     }
   },
   "footer": {

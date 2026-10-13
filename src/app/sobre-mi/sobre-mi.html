@@ -7,12 +7,10 @@
 
     <div class="columnas">
 
-      <div class="foto">
-        <span class="foto-texto">[TU FOTO]</span>
-      </div>
+      <img class="foto" src="img/fotoperfil.png" [alt]="t.about.photoAlt" />
 
       <div class="presentacion">
-        <!-- El saludo viene como "Hola, soy {name}", lo partimos igual que el titulo -->
+        <!-- El saludo viene como "Hola, soy {name}", lo partimos por el marcador -->
         @let partesSaludo = t.about.greeting.split('{name}');
 
         <h2 class="titulo-mediano">
