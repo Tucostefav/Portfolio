@@ -37,13 +37,16 @@
 
       <app-tarjeta>
         <div class="contenido">
-          <h3 class="proyecto-nombre">{{ t.projects.items.workOrders.name }}</h3>
-          <p class="texto-apoyo">{{ t.projects.items.workOrders.description }}</p>
+          <h3 class="proyecto-nombre">{{ t.projects.items.packDesign.name }}</h3>
+          <p class="texto-apoyo">{{ t.projects.items.packDesign.description }}</p>
           <div class="chips">
-            @for (tecnologia of proyectos.workOrders.tecnologias; track tecnologia) {
+            @for (tecnologia of proyectos.packDesign.tecnologias; track tecnologia) {
               <span class="chip">{{ tecnologia }}</span>
             }
           </div>
+          <a class="enlace" [href]="proyectos.packDesign.sitio" target="_blank" rel="noopener">
+            {{ t.projects.visitSite }} &rarr;
+          </a>
         </div>
       </app-tarjeta>
 

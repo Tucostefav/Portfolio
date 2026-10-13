@@ -93,9 +93,9 @@
         "name": "VALTIX",
         "description": "Plataforma SaaS de gestión contable."
       },
-      "workOrders": {
-        "name": "Sistema de Órdenes de Trabajo",
-        "description": "Digitalización y seguimiento operativo."
+      "packDesign": {
+        "name": "3PACK Design Studio",
+        "description": "Sitio web corporativo de un estudio de diseño: proyectos, servicios y contacto."
       },
       "vantia": {
         "name": "VantIA Studio",

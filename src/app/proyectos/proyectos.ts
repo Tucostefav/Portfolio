@@ -24,9 +24,9 @@ export class Proyectos {
       sitio: '',
       enDesarrollo: true,
     },
-    workOrders: {
-      tecnologias: ['PHP', 'JavaScript', 'MariaDB', 'Bootstrap'],
-      sitio: '',
+    packDesign: {
+      tecnologias: ['PHP', 'JavaScript', 'Bootstrap'],
+      sitio: 'https://3packdesign.com',
       enDesarrollo: false,
     },
     vantia: {

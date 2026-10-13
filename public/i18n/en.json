@@ -93,9 +93,9 @@
         "name": "VALTIX",
         "description": "SaaS platform for accounting management."
       },
-      "workOrders": {
-        "name": "Work Order System",
-        "description": "Digitized operations tracking."
+      "packDesign": {
+        "name": "3PACK Design Studio",
+        "description": "Corporate website for a design studio: projects, services and contact."
       },
       "vantia": {
         "name": "VantIA Studio",
