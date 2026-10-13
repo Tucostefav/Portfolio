@@ -1,4 +1,13 @@
+@if (textos.datos(); as t) {
+
 <footer class="pie">
-  <p class="pie-nombre">Carlos Mercado - Software Developer</p>
-  <p class="pie-derechos">© 2026 Todos los derechos reservados.</p>
+  <div class="contenedor">
+    <p class="pie-nombre">{{ t.common.name }} - {{ t.common.role }}</p>
+    <p class="pie-frase">{{ t.footer.tagline }}</p>
+    <!-- En el diccionario dice "© {year} Carlos Mercado...", cambiamos {year} por el año actual -->
+    <p class="pie-derechos">{{ t.footer.rights.replace('{year}', anio) }}</p>
+    <p class="pie-hecho">{{ t.footer.builtWith }}</p>
+  </div>
 </footer>
+
+}

@@ -1,0 +1,30 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion seccion--oscura" id="enfoque">
+  <div class="contenedor">
+
+    <h2 class="titulo-mediano">{{ t.valueBand.title }}</h2>
+    <p class="texto-apoyo introduccion">{{ t.valueBand.description }}</p>
+
+    <div class="grid grid--3 puntos">
+
+      <div class="punto">
+        <h3 class="punto-titulo">{{ t.valueBand.items.efficiency.title }}</h3>
+        <p class="texto-apoyo">{{ t.valueBand.items.efficiency.text }}</p>
+      </div>
+
+      <div class="punto">
+        <h3 class="punto-titulo">{{ t.valueBand.items.decisions.title }}</h3>
+        <p class="texto-apoyo">{{ t.valueBand.items.decisions.text }}</p>
+      </div>
+
+      <div class="punto">
+        <h3 class="punto-titulo">{{ t.valueBand.items.results.title }}</h3>
+        <p class="texto-apoyo">{{ t.valueBand.items.results.text }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+}

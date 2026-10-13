@@ -1,0 +1,17 @@
+.etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 20px 0;
+  color: var(--azul);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.raya {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--azul);
+}

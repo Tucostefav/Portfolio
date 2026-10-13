@@ -1,21 +1,47 @@
-<section class="portada" id="inicio">
+@if (textos.datos(); as t) {
 
-  <p class="etiqueta">Software Developer</p>
+<section class="seccion portada" id="inicio">
+  <div class="contenedor">
 
-  <h1 class="titulo">
-    Construyo software para resolver
-    <span class="resaltado">problemas reales</span>
-    de negocio
-  </h1>
+    <p class="etiqueta">{{ t.hero.eyebrow }}</p>
 
-  <p class="descripcion">
-    Desarrollo plataformas SaaS, sistemas empresariales y herramientas de
-    automatización con enfoque en operaciones, contabilidad y eficiencia.
-  </p>
+    <!--
+      En el diccionario el titulo viene asi:
+      "Construyo software para resolver {highlight} de negocio"
+      Lo partimos en dos por el marcador {highlight} para poder
+      pintar esa parte de azul. En ingles el marcador va en otro
+      lugar de la frase, y aun asi funciona.
+    -->
+    @let partesTitulo = t.hero.title.split('{highlight}');
 
-  <div class="botones">
-    <a class="boton-azul" href="#proyectos">Ver proyectos</a>
-    <a class="boton-blanco" href="#contacto">Contactarme</a>
+    <h1 class="titulo-grande">
+      {{ partesTitulo[0] }}<span class="resaltado">{{ t.hero.titleHighlight }}</span>{{ partesTitulo[1] }}
+    </h1>
+
+    <p class="texto-apoyo descripcion">{{ t.hero.description }}</p>
+
+    <div class="botones">
+      <a class="boton boton--azul" href="#proyectos">{{ t.hero.ctaProjects }}</a>
+      <a class="boton boton--blanco" href="#contacto">{{ t.hero.ctaCv }}</a>
+    </div>
+
+    <div class="chips">
+      <span class="chip chip--borde">{{ t.hero.tags.saas }}</span>
+      <span class="chip chip--borde">{{ t.hero.tags.businessSystems }}</span>
+      <span class="chip chip--borde">{{ t.hero.tags.automation }}</span>
+      <span class="chip chip--borde">{{ t.hero.tags.fullStack }}</span>
+    </div>
+
   </div>
-
 </section>
+
+}
+
+<app-sobre-mi></app-sobre-mi>
+<app-stack></app-stack>
+<app-proyectos></app-proyectos>
+<app-experiencia></app-experiencia>
+<app-certificaciones></app-certificaciones>
+<app-testimonios></app-testimonios>
+<app-enfoque></app-enfoque>
+<app-contacto></app-contacto>

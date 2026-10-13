@@ -1,0 +1,55 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion" id="stack">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.stack.eyebrow"></app-titulo-seccion>
+
+    <div class="grid grid--4">
+
+      <app-tarjeta>
+        <h3 class="grupo-titulo">{{ t.stack.categories.frontend }}</h3>
+        <ul class="lista">
+          <li>HTML <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>CSS <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>JavaScript <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>Bootstrap <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>Angular <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+        </ul>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="grupo-titulo">{{ t.stack.categories.backend }}</h3>
+        <ul class="lista">
+          <li>PHP <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>Node.js <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+          <li>Express <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+          <li>Java <span class="nivel">{{ t.stack.levels.basic }}</span></li>
+        </ul>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="grupo-titulo">{{ t.stack.categories.databases }}</h3>
+        <ul class="lista">
+          <li>MariaDB <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>MySQL <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>Firestore <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+          <li>{{ t.stack.skills.sqlModeling }} <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+        </ul>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="grupo-titulo">{{ t.stack.categories.cloudTools }}</h3>
+        <ul class="lista">
+          <li>Git / GitHub <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>Firebase <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+          <li>VS Code <span class="nivel">{{ t.stack.levels.advanced }}</span></li>
+          <li>{{ t.stack.skills.hostingDeploy }} <span class="nivel">{{ t.stack.levels.intermediate }}</span></li>
+        </ul>
+      </app-tarjeta>
+
+    </div>
+  </div>
+</section>
+
+}

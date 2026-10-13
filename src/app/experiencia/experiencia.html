@@ -1,0 +1,35 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion" id="experiencia">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.experience.eyebrow"></app-titulo-seccion>
+
+    <div class="columnas">
+
+      <div class="linea-tiempo">
+        @for (trabajo of trabajos; track $index) {
+          <div class="trabajo">
+            <div class="encabezado-trabajo">
+              <h3 class="puesto">{{ trabajo.puesto }}</h3>
+              <span class="periodo">{{ trabajo.periodo }}</span>
+            </div>
+            <p class="empresa">{{ trabajo.empresa }}</p>
+            <p class="texto-apoyo">{{ trabajo.logro }}</p>
+          </div>
+        }
+      </div>
+
+      <app-tarjeta>
+        <h3 class="titulo-mediano">{{ t.experience.cvCard.title }}</h3>
+        <p class="texto-apoyo">{{ t.experience.cvCard.text }}</p>
+        <a class="boton boton--azul boton-cv" href="#contacto">
+          {{ t.experience.cvCard.button }}
+        </a>
+      </app-tarjeta>
+
+    </div>
+  </div>
+</section>
+
+}

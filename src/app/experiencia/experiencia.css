@@ -1,0 +1,66 @@
+.columnas {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+
+.linea-tiempo {
+  border-left: 2px solid var(--borde);
+  padding-left: 24px;
+}
+
+.trabajo {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.trabajo:last-child {
+  padding-bottom: 0;
+}
+
+/* El puntito azul sobre la linea vertical */
+.trabajo::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--azul);
+}
+
+.encabezado-trabajo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.puesto {
+  margin: 0;
+  font-size: 17px;
+}
+
+.periodo {
+  font-size: 13px;
+  color: var(--texto-suave);
+}
+
+.empresa {
+  margin: 4px 0 8px 0;
+  color: var(--texto-gris);
+}
+
+.boton-cv {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .columnas {
+    grid-template-columns: 1fr;
+  }
+}

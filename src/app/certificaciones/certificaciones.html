@@ -1,0 +1,35 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion seccion--blanca" id="certificaciones">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.certifications.eyebrow"></app-titulo-seccion>
+
+    <div class="grid grid--2">
+
+      <div class="grupo">
+        @for (certificado of certificados; track $index) {
+          <app-tarjeta>
+            <h3 class="nombre">{{ certificado.nombre }}</h3>
+            <p class="texto-apoyo">{{ t.certifications.issuedBy }}: {{ certificado.emisor }}</p>
+            <p class="anio">{{ certificado.anio }}</p>
+          </app-tarjeta>
+        }
+      </div>
+
+      <div class="grupo">
+        <h3 class="grupo-titulo">{{ t.certifications.educationTitle }}</h3>
+        @for (estudio of estudios; track $index) {
+          <app-tarjeta>
+            <h4 class="nombre">{{ estudio.titulo }}</h4>
+            <p class="texto-apoyo">{{ estudio.lugar }}</p>
+            <p class="anio">{{ estudio.anio }}</p>
+          </app-tarjeta>
+        }
+      </div>
+
+    </div>
+  </div>
+</section>
+
+}

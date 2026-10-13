@@ -1,0 +1,57 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion seccion--blanca" id="sobre-mi">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.about.eyebrow"></app-titulo-seccion>
+
+    <div class="columnas">
+
+      <div class="foto">
+        <span class="foto-texto">[TU FOTO]</span>
+      </div>
+
+      <div class="presentacion">
+        <!-- El saludo viene como "Hola, soy {name}", lo partimos igual que el titulo -->
+        @let partesSaludo = t.about.greeting.split('{name}');
+
+        <h2 class="titulo-mediano">
+          {{ partesSaludo[0] }}<span class="resaltado">{{ t.common.name }}</span>{{ partesSaludo[1] }}
+        </h2>
+
+        <p class="texto-apoyo">{{ t.about.paragraph1 }}</p>
+        <p class="texto-apoyo parrafo">{{ t.about.paragraph2 }}</p>
+
+        <div class="datos">
+          <div class="dato">
+            <span class="dato-numero">[X]+</span>
+            <span class="dato-texto">{{ t.about.stats.years }}</span>
+          </div>
+          <div class="dato">
+            <span class="dato-numero">[X]</span>
+            <span class="dato-texto">{{ t.about.stats.systems }}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid--3 valores">
+      <app-tarjeta>
+        <h3 class="valor-titulo">{{ t.about.cards.businessFocus.title }}</h3>
+        <p class="texto-apoyo">{{ t.about.cards.businessFocus.text }}</p>
+      </app-tarjeta>
+      <app-tarjeta>
+        <h3 class="valor-titulo">{{ t.about.cards.customSolutions.title }}</h3>
+        <p class="texto-apoyo">{{ t.about.cards.customSolutions.text }}</p>
+      </app-tarjeta>
+      <app-tarjeta>
+        <h3 class="valor-titulo">{{ t.about.cards.continuousImprovement.title }}</h3>
+        <p class="texto-apoyo">{{ t.about.cards.continuousImprovement.text }}</p>
+      </app-tarjeta>
+    </div>
+
+  </div>
+</section>
+
+}

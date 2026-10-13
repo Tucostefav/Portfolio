@@ -1,0 +1,7 @@
+.tarjeta {
+  height: 100%;
+  padding: 20px;
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+}

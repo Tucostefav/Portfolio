@@ -1,0 +1,17 @@
+.introduccion {
+  max-width: 700px;
+}
+
+.puntos {
+  margin-top: 36px;
+}
+
+.punto {
+  padding-top: 20px;
+  border-top: 2px solid #22304d;
+}
+
+.punto-titulo {
+  margin: 0 0 8px 0;
+  font-size: 17px;
+}

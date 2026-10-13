@@ -1,0 +1,111 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion seccion--blanca" id="contacto">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.contact.eyebrow"></app-titulo-seccion>
+
+    <div class="columnas">
+
+      <div class="intro">
+        <h2 class="titulo-mediano">{{ t.contact.title }}</h2>
+        <p class="texto-apoyo">{{ t.contact.description }}</p>
+        <p class="disponible">
+          <span class="punto-verde"></span>
+          {{ t.contact.available }}
+        </p>
+      </div>
+
+      <div class="formulario-caja">
+
+        @if (estado() === 'exito') {
+
+          <p class="aviso aviso--exito">{{ t.contact.form.successMessage }}</p>
+
+        } @else {
+
+          <form (ngSubmit)="enviar()">
+
+            <label class="campo">
+              <span class="campo-etiqueta">{{ t.contact.form.nameLabel }}</span>
+              <input
+                class="campo-entrada"
+                type="text"
+                name="nombre"
+                required
+                [placeholder]="t.contact.form.namePlaceholder"
+                [(ngModel)]="nombre"
+              />
+            </label>
+
+            <label class="campo">
+              <span class="campo-etiqueta">{{ t.contact.form.emailLabel }}</span>
+              <input
+                class="campo-entrada"
+                type="email"
+                name="correo"
+                required
+                [placeholder]="t.contact.form.emailPlaceholder"
+                [(ngModel)]="correo"
+              />
+            </label>
+
+            <label class="campo">
+              <span class="campo-etiqueta">{{ t.contact.form.messageLabel }}</span>
+              <textarea
+                class="campo-entrada"
+                name="mensaje"
+                rows="4"
+                required
+                [placeholder]="t.contact.form.messagePlaceholder"
+                [(ngModel)]="mensaje"
+              ></textarea>
+            </label>
+
+            @if (estado() === 'error') {
+              <p class="aviso aviso--error">{{ t.contact.form.errorMessage }}</p>
+            }
+
+            <p class="nota">{{ t.contact.form.privacyNote }}</p>
+
+            <button
+              class="boton boton--azul"
+              type="submit"
+              [disabled]="estado() === 'enviando'"
+            >
+              @if (estado() === 'enviando') {
+                {{ t.contact.form.sending }}
+              } @else {
+                {{ t.contact.form.submit }}
+              }
+            </button>
+
+          </form>
+
+        }
+      </div>
+
+      <div class="canales">
+        <h3 class="canales-titulo">{{ t.contact.otherWays }}</h3>
+
+        <div class="canal">
+          <span class="canal-nombre">{{ t.contact.channels.email }}</span>
+          <span class="canal-dato">{{ datosContacto.correo }}</span>
+        </div>
+
+        <div class="canal">
+          <span class="canal-nombre">{{ t.contact.channels.github }}</span>
+          <span class="canal-dato">{{ datosContacto.github }}</span>
+        </div>
+
+        <div class="canal">
+          <span class="canal-nombre">{{ t.contact.channels.linkedin }}</span>
+          <span class="canal-dato">{{ datosContacto.linkedin }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+}

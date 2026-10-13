@@ -1,0 +1,54 @@
+@if (textos.datos(); as t) {
+
+<section class="seccion seccion--blanca" id="proyectos">
+  <div class="contenedor">
+
+    <app-titulo-seccion [texto]="t.projects.eyebrow"></app-titulo-seccion>
+
+    <div class="grid grid--4">
+
+      <app-tarjeta>
+        <h3 class="proyecto-nombre">{{ t.projects.items.encarga.name }}</h3>
+        <p class="texto-apoyo">{{ t.projects.items.encarga.description }}</p>
+        <div class="chips">
+          @for (tecnologia of tecnologias.encarga; track tecnologia) {
+            <span class="chip">{{ tecnologia }}</span>
+          }
+        </div>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="proyecto-nombre">{{ t.projects.items.valtix.name }}</h3>
+        <p class="texto-apoyo">{{ t.projects.items.valtix.description }}</p>
+        <div class="chips">
+          @for (tecnologia of tecnologias.valtix; track tecnologia) {
+            <span class="chip">{{ tecnologia }}</span>
+          }
+        </div>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="proyecto-nombre">{{ t.projects.items.workOrders.name }}</h3>
+        <p class="texto-apoyo">{{ t.projects.items.workOrders.description }}</p>
+        <div class="chips">
+          @for (tecnologia of tecnologias.workOrders; track tecnologia) {
+            <span class="chip">{{ tecnologia }}</span>
+          }
+        </div>
+      </app-tarjeta>
+
+      <app-tarjeta>
+        <h3 class="proyecto-nombre">{{ t.projects.items.vantia.name }}</h3>
+        <p class="texto-apoyo">{{ t.projects.items.vantia.description }}</p>
+        <div class="chips">
+          @for (tecnologia of tecnologias.vantia; track tecnologia) {
+            <span class="chip">{{ tecnologia }}</span>
+          }
+        </div>
+      </app-tarjeta>
+
+    </div>
+  </div>
+</section>
+
+}

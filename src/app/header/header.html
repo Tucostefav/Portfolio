@@ -1,20 +1,38 @@
+<!-- Mientras el archivo de textos no haya llegado, no se dibuja nada -->
+@if (textos.datos(); as t) {
+
 <header class="encabezado">
 
   <a class="logo" href="#inicio">
     <span class="logo-cuadro">CM</span>
     <span class="logo-textos">
-      <span class="logo-nombre">Carlos Mercado</span>
-      <span class="logo-puesto">Software Developer</span>
+      <span class="logo-nombre">{{ t.common.name }}</span>
+      <span class="logo-puesto">{{ t.common.role }}</span>
     </span>
   </a>
 
   <nav class="menu">
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#inicio">{{ t.nav.home }}</a>
+    <a href="#sobre-mi">{{ t.nav.about }}</a>
+    <a href="#stack">{{ t.nav.stack }}</a>
+    <a href="#proyectos">{{ t.nav.projects }}</a>
+    <a href="#experiencia">{{ t.nav.experience }}</a>
+    <a href="#contacto">{{ t.nav.contact }}</a>
   </nav>
 
-  <a class="boton-cv" href="#contacto">Descargar CV</a>
+  <div class="acciones">
+    <button
+      type="button"
+      class="boton-idioma"
+      [attr.aria-label]="t.common.changeLanguage"
+      (click)="textos.cambiarIdioma()"
+    >
+      @if (textos.idioma() === 'es') { EN } @else { ES }
+    </button>
+
+    <a class="boton boton--azul" href="#contacto">{{ t.nav.downloadCv }}</a>
+  </div>
 
 </header>
+
+}

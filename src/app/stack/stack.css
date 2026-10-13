@@ -1,0 +1,28 @@
+.grupo-titulo {
+  margin: 0 0 14px 0;
+  font-size: 16px;
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--borde);
+  font-size: 14px;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.nivel {
+  color: var(--texto-suave);
+  font-size: 12px;
+}
