@@ -4,24 +4,25 @@ import { getFirestore } from 'firebase/firestore';
 // ============================================================
 // CONFIGURACION DE FIREBASE
 //
-// TODO: reemplazar estos valores por los de tu proyecto.
-// Se sacan de: consola de Firebase > Configuracion del proyecto
-// > Tus apps > Configuracion del SDK > Config
+// Estos valores salen de la consola de Firebase:
+// Configuracion del proyecto > Tus apps > Configuracion del SDK
 //
-// Estas claves no son secretas: viajan al navegador en cualquier
-// app web de Firebase. Lo que protege los datos son las reglas
-// de seguridad, que estan en el archivo firestore.rules.
+// No son claves secretas: cualquier app web de Firebase las manda
+// al navegador del visitante. Lo que de verdad protege los datos
+// son las reglas de seguridad, que estan en firestore.rules.
 // ============================================================
 
 export const firebaseConfig = {
-  apiKey: 'PEGAR_AQUI',
-  authDomain: 'PEGAR_AQUI.firebaseapp.com',
-  projectId: 'PEGAR_AQUI',
-  storageBucket: 'PEGAR_AQUI.firebasestorage.app',
-  messagingSenderId: 'PEGAR_AQUI',
-  appId: 'PEGAR_AQUI',
+  apiKey: 'AIzaSyDT5N6yO1erLrgGW2V7tUzxfBw5_N0fnDo',
+  authDomain: 'portafio-programador.firebaseapp.com',
+  projectId: 'portafio-programador',
+  storageBucket: 'portafio-programador.firebasestorage.app',
+  messagingSenderId: '608367955637',
+  appId: '1:608367955637:web:49a1e30de1b7249489b8fc',
+  measurementId: 'G-RFG87EL5C4',
 };
 
-// Arranca Firebase y deja lista la base de datos
+// Arranca Firebase y deja lista la base de datos.
+// No usamos Analytics en el sitio, por eso no se importa aqui.
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
